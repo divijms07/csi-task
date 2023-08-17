@@ -1,0 +1,336 @@
+.baap{
+  padding: none;
+  margin-top: -18px;
+  background-color: #FEF9E7;
+}
+header{
+  margin: 20px 10px 60px 150px;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+}
+#main-button{
+  margin-left: 1200px;
+}
+.container{
+    margin: 0;
+    width: 100%;
+}
+.img-container{
+    width: 100%;
+    display: flex; 
+}
+.img-container.img{
+  border-radius: 50x;
+  height: 300px;
+}
+  
+.wallet-container {
+  display: flex;
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+.wallet-list {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  width: 450px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.wallet-item.heading {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.crypto-value {
+  font-size: 16px;
+  color: #666;
+}
+
+.wallet-item:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 60px;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+  
+.transaction{
+    margin-left: 10px;
+}
+.text-container{
+    width: 100%;
+    display: flex;  
+    border-radius: 10px;
+}
+
+
+.transaction{
+    margin-left: 40px;
+    justify-content: baseline;
+  }
+  
+.transaction-list{
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 420px;
+    height: inherit;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 10px;
+    border-bottom: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+  .crypto-name {
+    font-size: 20px;
+    margin: 3px;
+  }
+  
+  .crypto-release {
+    font-size: 0.8em;
+    color: #666;
+    margin: 2px 0;
+  }
+  
+  .crypto-value {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .transaction-item:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+  /* Your existing CSS code */
+
+/* Additional styles for dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    right: 0;
+    min-width: 150px;
+  }
+  
+  .dropdown-content p {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .dropdown-content p:last-child {
+    border-bottom: none;
+  }
+  
+  #see{
+    background-color: #007bff;
+  }
+  #see:hover{
+    background-color: #0056b3;
+}
+.text-container {
+  width: 100%;
+  display: flex; 
+}
+.card {
+  align-self: flex-start;
+  margin-top:50px; /* Set the margin to 0 */
+  padding: 0;
+  width: 700px;
+  border: 1px solid #ccc;
+}
+#converter {
+  margin: 50px 0px 0px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: black;
+  color: #ccc;
+  width: 500px;
+  height: 360px;
+}
+.card-header{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: none;
+  color: none;
+}
+
+/* Add media queries for tablet and mobile responsiveness */
+@media (max-width: 768px) {
+  /* Adjust header */
+  header {
+    margin: 20px 10px 30px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #main-button {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  /* Adjust .img-container */
+  .img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container.img {
+    height: 200px;
+  }
+
+  /* Adjust .wallet-container */
+  .wallet-container {
+    margin: 20px 10px;
+    align-self: center;
+  }
+
+  .wallet-list {
+    width: 100%;
+  }
+
+  /* Adjust .transaction */
+  .transaction {
+    margin: 20px 10px;
+    align-self: center;
+  }
+
+  .transaction-list {
+    width: 100%;
+  }
+
+  /* Adjust .text-container */
+  .text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  #converter {
+    margin: 20px 10px;
+    width: 90%;
+  }
+}
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+
+  .label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  
+
+  #label-container {
+    align-items: center;
+    margin-top: none;
+    margin-bottom: 10px;
+    width: 800px;
+    background-color: black;
+  }
+  #label-container h4{
+    color: white;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+    width: 600px;
+    height: 200px;
+    margin: 20px ;
+  }
+
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px; 
+  }
+
+  #input1 {
+    width: 100px;
+  }
+
+  #input2 {
+    width: 100px;
+  }
+
+  #btn5 {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #btn5:hover{
+    background-color: #0056b3;
+}

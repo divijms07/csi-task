@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSI</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/40a53d48d8.js" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="baap">
+        <header>
+            <h1>Overview </h1>
+            <a href="#" id="main-button" class="btn btn-primary" onclick="alert('Downloaded')"><i
+                    class="fa-solid fa-download"></i> Download Report</a>
+        </header>
+        <div class="container">
+            <div class="img-container">
+                <div class="img">
+                    <img src="https://picsum.photos/200" alt="random image" style="border-radius: 50px; height:300px; width:450px">
+                </div>
+                <div class="wallet-container">
+                    <ul class="wallet-list">
+                        <li class="wallet-item heading">My Wallet <span class="wallet-item add-button"
+                                onclick="addNewRow()">+</span> </li>
+                        <li class="wallet-item">Solana <span class="crypto-value">$150</span></li>
+                        <li class="wallet-item">Bitcoin <i class="fa-brands fa-bitcoin"></i></li>
+                        <li class="wallet-item">Ethereum <i class="fa-brands fa-ethereum"></i></li>
+                        <li class="wallet-item">Litecoin <i class="fa-solid fa-litecoin-sign"></i></li>
+
+                    </ul>
+                </div>
+                <div class="transaction">
+                    <ul class="transaction-list">
+                        <li class="wallet-item heading">
+                            Transactions
+                            <div class="dropdown">
+                                <button id="see" class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false  ">
+                                    See all
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="transaction-item"><span><i class="fa-brands fa-bitcoin"></i></span>
+                            <div class="crypto-details">
+                                <h4 class="crypto-name">Bitcoin</h4>
+                                <p class="crypto-release">sberejaejrthrhy</p>
+                            </div>
+                            <h5 class="crypto-value">$50,000</h5>
+                        </li>
+                        <li class="transaction-item"><span><i class="fa-brands fa-bitcoin"></i></span>
+                            <div class="crypto-details">
+                                <h4 class="crypto-name">Bitcoin</h4>
+                                <p class="crypto-release">sberejaejrthrhy</p>
+                            </div>
+                            <h5 class="crypto-value">$50,000</h5>
+                        </li>
+                        <li class="transaction-item"><span><i class="fa-brands fa-bitcoin"></i></span>
+                            <div class="crypto-details">
+                                <h4 class="crypto-name">Bitcoin</h4>
+                                <p class="crypto-release">sberejaejrthrhy</p>
+                            </div>
+                            <h5 class="crypto-value">$50,000</h5>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="text-container" >
+                <div class="core">
+                    <div class="card" style="width: 918px;">
+                        <div class="card-body" style="width: 890px;">
+                            <h4 class="card-title">CSI Website</h4>
+                            <h5>Task</h5>
+                            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi natus pariatur nobis voluptas ipsam sequi magni, expedita ipsa a accusamus nulla. Vitae, culpa. Voluptate enim officiis praesentium eveniet laboriosam non eius ipsum mollitia harum, aliquid sed, excepturi placeat ad doloremque!
+                                With supporting text below as a natural lead-in to additional content.
+                                anvjksn vfvd vdbd bfgbfgbghbfgbfnd gghnhngnfnfhhfgbfgb fg bf fbfggjcnkdjvnskvnkk</p>
+                            <a href="http://csi.dbit.in/" class="btn btn-primary"><i class="fa-regular fa-file"></i>
+                                Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="label-container" class="card">
+                    <h4>Swap Function</h4>
+                    <div class="input-container">
+                        <input type="text" id="input1" placeholder="Input 1">
+                        <input type="text" id="input2" pla="Input 2">
+                    </div>
+                    <button id="btn5" onclick="swapInputs()">Swap Inputs</button>
+                </div>
+                <!-- <div id="converter">
+                    <div class="card-header">
+                        <i class="fa-brands fa-bitcoin"></i> <span> </span><i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+                    <br>
+                    <input type="number" id="bitcoin" step="any" placeholder="Bitcoin/INR" required>
+                    <br><br>
+                    <label for="currency">Convert to:</label> <br>
+                    <select id="currency">
+                        <option value="inr">INR (Indian Rupees)</option>
+                        <option value="bitcoin">Bitcoin</option>
+                    </select>
+                    <br><br>
+                    <button type="button" class="btn btn-primary" onclick="convertCurrency()">Convert</button>
+                    <br><br>
+                    <p id="result"></p>
+                </div> -->
+            </div>
+
+        </div>
+        <!-- <footer>
+            <h1>CSI-WEBDEV</h1>
+        </footer> -->
+    </div>
+</body>
+
+</html>
