@@ -19,8 +19,8 @@
     <div class="baap">
         <header>
             <h1>Overview </h1>
-            <a href="#" id="main-button" class="btn btn-primary" onclick="alert('Downloaded')"><i
-                    class="fa-solid fa-download"></i> Download Report</a>
+            <a href="#" id="main-button" class="btn btn-primary" onclick="alert('Downloaded')">
+                <i class="fa-solid fa-download" style=" margin-right: 20px;"></i> Download Report</a>
         </header>
         <div class="container">
             <div class="img-container">
@@ -81,7 +81,7 @@
             </div>
             <div class="text-container" >
                 <div class="core">
-                    <div class="card" style="width: 918px;">
+                    <div class="card" style="width: 918px; height: inherit;">
                         <div class="card-body" style="width: 890px;">
                             <h4 class="card-title">CSI Website</h4>
                             <h5>Task</h5>
@@ -93,14 +93,16 @@
                         </div>
                     </div>
                 </div>
+            <div class="swap" style="display: flex; width: 500px;">
                 <div id="label-container" class="card">
-                    <h4>Swap Function</h4>
+                    <h4><strong> Swap Function</strong></h4>
                     <div class="input-container">
-                        <input type="text" id="input1" placeholder="Input 1">
-                        <input type="text" id="input2" pla="Input 2">
+                        <input type="text" id="input1" placeholder="Input 1" style="width: inherit;">
+                        <input type="text" id="input2" placeholder="Input 2" style="width: inherit;">
                     </div>
-                    <button id="btn5" onclick="swapInputs()">Swap Inputs</button>
+                    <button id="btn5" onclick="swapInputs()" style="height: 35px;">Swap </button>
                 </div>
+            </div>
                 <!-- <div id="converter">
                     <div class="card-header">
                         <i class="fa-brands fa-bitcoin"></i> <span> </span><i class="fa-solid fa-indian-rupee-sign"></i>
